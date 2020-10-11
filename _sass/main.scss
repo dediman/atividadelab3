@@ -93,7 +93,11 @@ article{
     color: var(--primary-color);
     article header{
         font-size: 13px;
-    }    
+        
+    }
+    article p{
+        font-size: 10px;
+    }
 }
 aside {
     margin: 50px 30px;
