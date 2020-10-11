@@ -1,0 +1,21 @@
+---
+layout: default
+---
+<header id="main_header"><h2>Últimos posts</h2></header>
+<section class="posts_home">
+    
+        {% for post in site.posts %}
+            <article > 
+            
+                <h2><a href= "{{ post.url | relative_url }} ">{{post.title}}</a></h2>
+                <p> {{ post. excerpt }} </p>
+            
+                
+            </article>
+
+        {% endfor %}
+    
+</section>
+<aside>
+    <p>Espaço para propaganda</p>
+</aside>

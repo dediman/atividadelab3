@@ -1,0 +1,33 @@
+:root { --primary-color: #000000; --secondary-color: #ffffff; --primary-background: #c3d0e2; --secondary-background: #3512b3; --tertiary-background: #4b7ec5; font-family: sans-serif; font-size: 16px; line-height: 1.5em; }
+
+* { box-sizing: border-box; }
+
+body { margin: 0; padding: 0; background: var(--primary-background); }
+
+li, a { color: var(--light); text-decoration: none; }
+
+body { display: flex; flex-direction: column; }
+
+header#cabecalho-principal { background: var(--secondary-background); color: var(--primary-color); height: 80px; display: flex; justify-content: center; align-items: center; grid-area: header; }
+
+nav#navegacao-principal { background: var(--tertiary-background); color: var(--primary-color); display: flex; justify-content: center; grid-area: nav; }
+
+nav#navegacao-principal ul { margin: 0; padding: 0; }
+
+nav#navegacao-principal ul li { display: inline-block; padding: 10px; }
+
+main { align-self: center; width: calc(100% - 60px); display: grid; grid-template-columns: auto 300px; grid-template-areas: "head1 aside" "sec1 aside"; background-color: var(--primary-background); }
+
+header#main_header { grid-area: head1; display: grid; grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); background-color: var(--primary-background); }
+
+.posts_home { grid-area: sec1; display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); background-color: var(--primary-background); }
+
+article { display: flex; flex-direction: column; justify-content: space-between; padding: 30px; margin: 50px 30px; height: 80%; border: 15px solid var(--secondary-background); background-color: var(--primary-background); color: var(--primary-color); }
+
+article article header { font-size: 13px; }
+
+aside { margin: 50px 30px; height: 80%; border: 15px solid var(--secondary-background); background-color: var(--tertiary-background); justify-content: center; align-items: center; text-align: center; color: var(--secondary-color); grid-area: aside; }
+
+footer#rodape-principal { background: var(--secondary-background); color: var(--primary-color); height: 60px; display: flex; justify-content: center; align-items: center; }
+
+/*# sourceMappingURL=styles.css.map */

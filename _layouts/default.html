@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ page.title }}</title>
+    <link rel ="stylesheet" href="{{ '/assets/css/styles.css' | relative_url }} ">
+</head>
+<body>
+    <header id = "cabecalho-principal">
+        <h1>Instrumentos Musicais</h1>
+    </header>
+    <nav id = "navegacao-principal">
+        <ul>
+            <li><a href="{{' /_site/index.html' | relative_url }} "> Home </a></li>
+        </ul>
+    </nav>
+
+    <main>
+        {{ content }}
+    </main>
+
+    <footer id = "rodape-principal">
+        <p>Todos os direitos reservados - Copyright 2020</p>
+    </footer>
+</body>
+</html>
