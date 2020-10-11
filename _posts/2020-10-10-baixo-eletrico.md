@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Welcome to Jekyll!"
+title:  "Baixo elétrico"
 date:   2020-10-10 22:07:54 -0300
 categories: jekyll update
 ---
